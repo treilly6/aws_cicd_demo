@@ -36,8 +36,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: switch to maser
-        run: echo $(git remote -v)
+      - name: checkout master
+        run: git checkout master
 
       - name: merge dev into master
-        run: echo $(git branch)
+        run: git merge dev
