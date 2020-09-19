@@ -36,6 +36,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Fetch origin repo
+        run: git fetch
+
       - name: checkout master
         run: git checkout master
 
