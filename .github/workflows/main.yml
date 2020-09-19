@@ -43,4 +43,4 @@ jobs:
         run: git checkout master
 
       - name: merge dev into master
-        run: git merge dev
+        run: git merge dev --alow-unrelated-histories
