@@ -40,4 +40,4 @@ jobs:
         run: echo $(git remote -v)
 
       - name: merge dev into master
-        run: echow $(git branch)
+        run: echo $(git branch)
