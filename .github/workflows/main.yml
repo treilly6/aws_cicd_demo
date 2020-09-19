@@ -26,6 +26,7 @@ jobs:
           python-version: 3.7
 
   test:
+    runs-on: ubuntu-latest
     steps:
       - name: Run unit tests
         run: python -m unittest test_OddOrEven.py
