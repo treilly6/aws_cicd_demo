@@ -29,7 +29,7 @@ class TestOddOrEven(unittest.TestCase):
             OddOrEven({})
 
         with self.assertRaises(OddEvenError):
-            OddOrEven(9)
+            OddOrEven(90)
 
 if __name__ == "__main__":
     unittest.main()

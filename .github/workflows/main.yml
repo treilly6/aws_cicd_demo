@@ -28,5 +28,16 @@ jobs:
       - name: Run unit tests
         run: python -m unittest test_OddOrEven.py
 
-  # merge-into-master:
-  #   runs-on: ubuntu-latest
+  merge-into-master:
+    needs: test
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@master
+
+      - name: switch to maser
+        run: git checkout master
+
+      - name: merge dev into master
+        run: git merge dev
